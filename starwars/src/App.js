@@ -17,14 +17,12 @@ const App = () => {
       .then(response => {
         const peopleArray = response.data.results;
         setPeople(peopleArray);
-        // console.log(peopleArray);
       })
       .catch(err => {
         console.log(err);
       });
   }, []);
 
-  console.log(people[0]);
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>

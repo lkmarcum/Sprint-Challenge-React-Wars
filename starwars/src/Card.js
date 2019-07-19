@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Icon } from "semantic-ui-react";
+import { Card, Icon, Divider } from "semantic-ui-react";
 
 function PersonCard({ name, height, mass, hair, skin, eyes, birth, gender }) {
   return (
@@ -9,7 +9,7 @@ function PersonCard({ name, height, mass, hair, skin, eyes, birth, gender }) {
           <Icon name="user circle outline" />
           {name}
         </Card.Header>
-
+        <Divider />
         <Card.Description>
           <Icon name="arrows alternate vertical" />
           Height: {height} cm
@@ -23,7 +23,7 @@ function PersonCard({ name, height, mass, hair, skin, eyes, birth, gender }) {
           Hair: {hair}
         </Card.Description>
         <Card.Description>
-          <Icon name="hand paper outline" />
+          <Icon name="hand paper" />
           Skin: {skin}
         </Card.Description>
         <Card.Description>
